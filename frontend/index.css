@@ -1,4 +1,17 @@
 h1
 {
-    color:blue;
+    color:#71c621;
+}
+#p1
+{
+    color:aqua;
+}
+#home
+{
+    text-align: center;
+    border:3px,solid,hsl(46, 86%, 41%);
+}
+#home:hover
+{
+    background-color: blanchedalmond;
 }
