@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Godhasree5/AutoSuggest/issues"
   },
-  "homepage": "https://github.com/Godhasree5/AutoSuggest#readme"
+  "homepage": "https://github.com/Godhasree5/AutoSuggest#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
