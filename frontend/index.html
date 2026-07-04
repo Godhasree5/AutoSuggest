@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
 </head>
 <body>
     <div id="nav">
@@ -21,14 +20,15 @@
     </div>
     <div id="card">
         <div id="card_img">
-            <img src="./images/images.jpg" alt="">
+            <img id="img" src="../images/jane.png">
         </div>
-    <div id="c_name">
-        <h2>Godha</h2>
+        <div id="action">
+            <h2 id="card_name">Godha</h2>
+            <p id="card_gen">female</p>
+            <button onclick="toggle()" id="card_toggle">toggle</button>
+            <button onclick="getRandomUser()" id="user">Random User</button>
+        </div>
     </div>
-    <div id="c_gender">
-        <p id="gen">Female</p>
-    </div>
-    </div>
+    <script src="index.js"></script>
 </body>
 </html>

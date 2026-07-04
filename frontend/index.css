@@ -31,14 +31,33 @@ h1
 #card
 {
     text-align: center;
+    border: 3px solid black;
+    align-items: center;
+    margin: 5px auto;
+    height:400px;
+    width: 300px;
+    border-radius:8px;
 }
-#cardcard_image
-{
+#card_img
+{   
     align-items: center;
     margin: 0px,auto;
 
 }
-#card h2,p{
+#action
+{
     text-align: center;
-    text-decoration: double;
+}
+button
+{
+    width:100%;
+}
+#toggle
+{
+    text-align: center;
+    -webkit-animation-fill-color:beige ;
+}
+#img{
+    height: 200px;
+    width: 300px;
 }

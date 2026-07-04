@@ -2,12 +2,12 @@ console.log("hello from js");
 alert("hello from js");
 const users = [
   {
-    "name" :"Jane Doe",
+    "name" :"Godha",
     "gender" : "Female",
     "image" : "../images/jane.png"
   },
   {
-    "name" :"John Doe",
+    "name" :"Rahul",
     "gender" : "Male",
     "image" : "../images/john.png"
   },
@@ -21,5 +21,30 @@ function toggle(){
   // image
   document.getElementById("img").src=users[curUserId].image;
   // name
-  document.getElementById("card-name").innerText=users[curUserId].name;
+  document.getElementById("card_name").innerText=users[curUserId].name;
+  document.getElementById("card_gen").innerText=users[curUserId].gender;
+}
+function getRandomUser()
+{
+  fetch("https://randomuser.me/api")
+    .then(function (data){
+      return data.json()
+    })
+    .then(function (parsedData){
+      // console.log(parsedData)
+      let gender = parsedData.results[0].gender;
+
+      let first = parsedData.results[0].name.first;
+      let last = parsedData.results[0].name.last;
+      let name = first  + " " + last;
+      let imageUrl = parsedData.results[0].picture.large;
+
+      // gender
+      document.getElementById("card_gen").innerText=gender;
+      // name
+      document.getElementById("card_name").innerText=name;
+      // img
+      document.getElementById("img").src=imageUrl;
+
+    })
 }
