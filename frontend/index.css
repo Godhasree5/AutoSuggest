@@ -31,7 +31,7 @@ h1
 #card
 {
     text-align: center;
-    border: 3px solid black;
+    border: 3px solid rgb(201, 149, 36);
     align-items: center;
     margin: 5px auto;
     height:400px;
